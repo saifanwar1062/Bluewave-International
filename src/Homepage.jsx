@@ -25,7 +25,7 @@ import Food from "./assets/food.jpeg";
 import Bar from "./assets/barservice1.jpeg";
 import Housekeeping from "./assets/housekeeping.jpeg";
 import CruiseStaff from "./assets/member.jpeg";
-import Deck from "./assets/deck.jpeg";
+import Deck from "./assets/Deck.jpeg";
 import Voyages from "./assets/voyages.jpeg";
 import { Link } from 'react-router-dom';
 
