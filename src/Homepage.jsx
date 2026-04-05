@@ -1,19 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
 import {
     ArrowRight,
-    ChevronLeft,
-    ChevronRight,
     Briefcase,
     Award,
     Globe,
     Clock,
     Ship,
-    Star,
-    Anchor,
-    Play,
-    Pause
+    Anchor
 } from 'lucide-react';
-import RecruitmentProcess from './Recruitmentprocess ';
+import RecruitmentProcess from './RecruitmentProcess';
 import { useApply } from './ApplyContext';
 import Msc from "./assets/msc.jpeg";
 import Fred from "./assets/fred.jpeg";
