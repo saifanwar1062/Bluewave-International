@@ -131,14 +131,15 @@ const Footer = () => {
                                 <MapPin size={18} className="text-[#FFD700] flex-shrink-0 group-hover:scale-110 transition-transform" />
                                 <span className="text-sm">Plot no 6, 6th floor Office no 607, Knowledge Park IV, Jaitpur Baishpur, Greater Noida, Uttar Pradesh 201310</span>
                             </li>
-                            <li className="flex items-center justify-center md:justify-start space-x-3 text-white/70 hover:text-white transition-colors group">
+                            <a href="tel:+918796144831" className="flex items-center justify-center md:justify-start space-x-3 text-white/70 hover:text-white transition-colors group">
                                 <Phone size={18} className="text-[#FFD700] flex-shrink-0 group-hover:scale-110 transition-transform" />
-                                <span className="text-sm">+1 (800) 258-3928</span>
-                            </li>
-                            <li className="flex items-center justify-center md:justify-start space-x-3 text-white/70 hover:text-white transition-colors group">
+                                <span className="text-sm">+91-8796144831</span>
+                            </a>
+
+                            <a href="mailto:hr@bluewavecruise.in" className="flex items-center justify-center md:justify-start space-x-3 text-white/70 hover:text-white transition-colors group">
                                 <Mail size={18} className="text-[#FFD700] flex-shrink-0 group-hover:scale-110 transition-transform" />
                                 <span className="text-sm">hr@bluewavecruise.in</span>
-                            </li>
+                            </a>
                         </ul>
 
                         {/* Working Hours */}

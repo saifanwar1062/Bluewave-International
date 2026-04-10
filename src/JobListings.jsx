@@ -723,14 +723,7 @@ const JobListings = () => {
       {/* CTA Section */}
       <section className="py-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-[#002B5C] via-[#0A4D8C] to-[#7CB9E8]"></div>
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120'%3E%3Cpath fill='%23FFD700' d='M0,64L80,58.7C160,53,320,43,480,48C640,53,800,75,960,80C1120,85,1280,75,1360,69.3L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z'%3E%3C/path%3E%3C/svg%3E")`,
-            backgroundRepeat: 'repeat-x',
-            backgroundPosition: 'bottom',
-            backgroundSize: '1200px 40px'
-          }}></div>
-        </div>
+      
 
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <div className="animate-on-scroll" data-animation="scale">
@@ -748,12 +741,8 @@ const JobListings = () => {
               Let BlueWave International guide you to your dream career at sea.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-3.5 bg-gradient-to-r from-[#FFD700] to-[#FFA500] text-[#002B5C] rounded-full font-semibold hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200">
-                Create Profile
-              </button>
-              <button className="px-8 py-3.5 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white rounded-full font-semibold hover:bg-white/20 transition-all duration-200">
-                Upload Resume
-              </button>
+            
+           
             </div>
           </div>
         </div>

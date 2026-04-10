@@ -10,7 +10,7 @@ const Whatsapp = () => {
     const [showQuickReplies, setShowQuickReplies] = useState(false);
     const { whatsappTrigger, clearWhatsappTrigger } = useApply();
 
-    const whatsappNumber = "+919456668969";
+    const whatsappNumber = "+918796144831";
 
     // Bluewave International color scheme
     const colors = {

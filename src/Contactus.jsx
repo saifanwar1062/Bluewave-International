@@ -505,8 +505,8 @@ const Contactus = () => {
                   </div>
                   <div>
                     <p className="text-xs text-gray-500 font-medium uppercase tracking-wide">Contact No.</p>
-                    <a href="tel:+918076281152" className="text-sm font-semibold text-[#002B5C] group-hover:text-[#FFD700] transition">
-                      +91-80762 81152
+                    <a href="tel:+918796144831" className="text-sm font-semibold text-[#002B5C] group-hover:text-[#FFD700] transition">
+                      +91-8796144831
                     </a>
                   </div>
                 </div>

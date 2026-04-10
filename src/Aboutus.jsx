@@ -386,11 +386,11 @@ const AboutUs = () => {
                 className="group p-6 rounded-2xl bg-slate-50 hover:bg-white hover:shadow-xl transition-all duration-300 fade-up border border-[#FFD700]/20 hover:border-[#FFD700]/40"
                 style={{ transitionDelay: `${index * 0.1}s` }}
               >
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#002B5C] to-[#0A4D8C] text-white flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-[#002B5C] to-[#0A4D8C] text-white mb-4 group-hover:scale-110 transition-transform mx-auto">
                   {value.icon}
                 </div>
-                <h3 className="text-xl font-bold text-[#002B5C] mb-2">{value.title}</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">{value.desc}</p>
+                <h3 className="text-xl font-bold text-[#002B5C] mb-2 text-center">{value.title}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed text-center">{value.desc}</p>
               </div>
             ))}
           </div>

@@ -650,8 +650,8 @@ const TermsAndConditions = () => {
                                         </div>
                                         <div className="text-center lg:text-left">
                                             <p className="text-sm text-white/70">Phone</p>
-                                            <a href="tel:+919760622873" className="font-medium hover:text-[#FFD700] transition">
-                                                +91-9760622873
+                                            <a href="tel:+918796144831" className="font-medium hover:text-[#FFD700] transition">
+                                                +91-8796144831
                                             </a>
                                         </div>
                                     </div>

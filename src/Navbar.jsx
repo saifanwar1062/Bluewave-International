@@ -20,7 +20,7 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Home', icon: <icon className="w-4 h-4" />, path: '/' },
-    { name: 'About Us', icon: <icon  className="w-4 h-4" />, path: '/about' },
+    { name: 'About Us', icon: <icon className="w-4 h-4" />, path: '/about' },
     { name: 'Services', icon: <icon className="w-4 h-4" />, path: '/services' },
     { name: 'Jobs', icon: <icon className="w-4 h-4" />, path: '/jobs' },
     { name: 'Training', icon: <icon className="w-4 h-4" />, path: '/training' },
@@ -35,14 +35,13 @@ const Navbar = () => {
   return (
     <>
       {/* Main Navbar with royal blue to sky blue gradient with golden accent */}
-      <nav className={`sticky top-0 z-50 transition-all duration-300 ${
-        scrolled
+      <nav className={`sticky top-0 z-50 transition-all duration-300 ${scrolled
           ? 'shadow-lg shadow-blue-900/20 bg-gradient-to-l from-[#002B5C] via-[#0A4D8C] to-[#7CB9E8]/30'
           : 'shadow-md shadow-blue-900/10 bg-gradient-to-l from-[#002B5C] via-[#0A4D8C] to-[#7CB9E8]/30'
-      }`}>
+        }`}>
         {/* Golden gradient overlay for premium look */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#FFD700]/5 via-[#FFA500]/10 to-[#FFD700]/5"></div>
-        
+
         {/* Subtle wave pattern overlay for depth */}
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120'%3E%3Cpath fill='%23ffffff' d='M0,64L80,58.7C160,53,320,43,480,48C640,53,800,75,960,80C1120,85,1280,75,1360,69.3L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z'%3E%3C/path%3E%3C/svg%3E")`,
@@ -72,22 +71,19 @@ const Navbar = () => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className={`flex items-center space-x-1 px-3 xl:px-4 py-2 font-medium transition-all duration-300 rounded-xl relative group ${
-                    isActivePath(item.path)
+                  className={`flex items-center space-x-1 px-3 xl:px-4 py-2 font-medium transition-all duration-300 rounded-xl relative group ${isActivePath(item.path)
                       ? 'text-[#FFD700] bg-white/10 shadow-lg shadow-black/10'
                       : 'text-white/90 hover:text-[#FFD700] hover:bg-white/5'
-                  }`}
+                    }`}
                 >
-                  <span className={`transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 ${
-                    isActivePath(item.path) ? 'text-[#FFD700]' : 'text-white/90 group-hover:text-[#FFD700]'
-                  }`}>
+                  <span className={`transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 ${isActivePath(item.path) ? 'text-[#FFD700]' : 'text-white/90 group-hover:text-[#FFD700]'
+                    }`}>
                     {item.icon}
                   </span>
                   <span className="relative text-sm xl:text-base">
                     {item.name}
-                    <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-[#FFD700] to-[#FFA500] transition-all duration-300 ${
-                      isActivePath(item.path) ? 'w-full' : 'w-0 group-hover:w-full'
-                    }`}></span>
+                    <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-[#FFD700] to-[#FFA500] transition-all duration-300 ${isActivePath(item.path) ? 'w-full' : 'w-0 group-hover:w-full'
+                      }`}></span>
                   </span>
                 </Link>
               ))}
@@ -125,7 +121,7 @@ const Navbar = () => {
               {/* Mobile menu background with royal blue gradient */}
               <div className="absolute inset-0 bg-gradient-to-br from-[#002B5C] via-[#0A4D8C] to-[#7CB9E8]"></div>
               <div className="absolute inset-0 backdrop-blur-sm bg-gradient-to-br from-[#002B5C]/95 via-[#0A4D8C]/95 to-[#7CB9E8]/95"></div>
-              
+
               {/* Golden wave decoration */}
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#FFD700] via-[#FFA500] to-[#FFD700]"></div>
 
@@ -134,16 +130,14 @@ const Navbar = () => {
                   <Link
                     key={item.name}
                     to={item.path}
-                    className={`flex items-center space-x-3 px-4 sm:px-6 py-3 sm:py-4 font-medium transition-all duration-300 ${
-                      isActivePath(item.path)
+                    className={`flex items-center space-x-3 px-4 sm:px-6 py-3 sm:py-4 font-medium transition-all duration-300 ${isActivePath(item.path)
                         ? 'text-[#FFD700] bg-white/10 border-l-4 border-[#FFD700]'
                         : 'text-white/80 hover:text-[#FFD700] hover:bg-white/5 hover:pl-6 sm:hover:pl-8'
-                    }`}
+                      }`}
                     onClick={() => setIsOpen(false)}
                   >
-                    <span className={`transition-transform ${
-                      isActivePath(item.path) ? 'scale-110 text-[#FFD700]' : 'text-white/80'
-                    }`}>
+                    <span className={`transition-transform ${isActivePath(item.path) ? 'scale-110 text-[#FFD700]' : 'text-white/80'
+                      }`}>
                       {item.icon}
                     </span>
                     <span className="text-sm sm:text-base">{item.name}</span>
@@ -167,14 +161,25 @@ const Navbar = () => {
 
                   {/* Quick contact info for mobile with golden accents */}
                   <div className="flex flex-col items-center justify-center mt-4 pt-4 border-t border-white/20">
-                    <div className="flex items-center space-x-2 text-white/90 hover:text-[#FFD700] transition-colors duration-300">
+
+                    {/* Email */}
+                    <a
+                      href="mailto:hr@bluewavecruise.in"
+                      className="flex items-center space-x-2 text-white/90 hover:text-[#FFD700] transition-colors duration-300"
+                    >
                       <Mail className="w-4 h-4" />
                       <span className="text-xs sm:text-sm">hr@bluewavecruise.in</span>
-                    </div>
-                    <div className="flex items-center space-x-2 mt-2 text-white/90 hover:text-[#FFD700] transition-colors duration-300">
+                    </a>
+
+                    {/* Phone */}
+                    <a
+                      href="tel:+918796144831"
+                      className="flex items-center space-x-2 mt-2 text-white/90 hover:text-[#FFD700] transition-colors duration-300"
+                    >
                       <Phone className="w-4 h-4" />
-                      <span className="text-xs sm:text-sm">+91-9760622873</span>
-                    </div>
+                      <span className="text-xs sm:text-sm">+91-8796144831</span>
+                    </a>
+
                   </div>
                 </div>
               </div>

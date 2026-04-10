@@ -478,7 +478,7 @@ const Faq = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-[#002B5C]">Call Us</h4>
-                      <p className="text-gray-700">+1 (800) 123-4567</p>
+                      <p className="text-gray-700">+91-8796144831</p>
                       <p className="text-gray-500 text-sm">Mon-Sat: 10:00 AM-06:00 PM</p>
                     </div>
                   </div>
